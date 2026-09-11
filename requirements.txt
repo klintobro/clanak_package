@@ -1,0 +1,18 @@
+# Python packages required by the CLANAK research code.
+# Exact historical package versions were not recorded in the supplied source files.
+# For a future release, capture a verified environment with: pip freeze > requirements-lock.txt
+
+numpy
+pandas
+scipy
+scikit-learn
+imbalanced-learn
+matplotlib
+seaborn
+openpyxl
+statsmodels
+tensorflow
+xgboost
+lightgbm
+requests
+ipython

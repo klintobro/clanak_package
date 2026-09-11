@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets / local configuration
+.env
+.env.*
+*.key
+*.pem
+
+# Generated outputs
+corrected_thesis_results/
+CLANAK_Extended_Analysis/
+results/
+output/
+*.xlsx
+*.zip
+mycsv.csv
+
+# Uploaded/local datasets
+*.csv

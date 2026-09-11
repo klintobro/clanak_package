@@ -1,0 +1,65 @@
+import socket
+import ssl
+import time
+import datetime
+import csv
+import requests
+
+url = input("Enter the URL (e.g., example.com:443): ")
+host, port = url.split(':')
+port = int(port)
+
+with open('mycsv.csv', 'w', newline='') as f:
+    thewriter = csv.writer(f)
+
+    thewriter.writerow(['Handshake time','', 'Handshake date and time','','temperature','','pressure','','humidity','','wind speed','','wind direction','','Rain'])
+
+    for i in range(5):
+        # Create a TCP socket
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+        # Wrap the socket with SSL context
+        ssl_context = ssl.create_default_context()
+        ssl_sock = ssl_context.wrap_socket(sock, server_hostname=host)
+
+        # Connect to the server
+        start_time = time.time()
+        ssl_sock.connect((host, port))
+        end_time = time.time()
+
+        # Calculate the handshake time
+        handshake_time = end_time - start_time
+        current_date_and_time = datetime.datetime.now()
+
+        api_key = "YOUR OPEN API KEY HERE"
+        base_url = "http://api.openweathermap.org/data/2.5/weather?"
+        city_name = "YOUR CITY NAME HERE"
+        complete_url = base_url + "q=" + city_name + "&appid=" + api_key
+        response = requests.get(complete_url)
+        data = response.json()
+
+        if response.status_code == 200:
+            temp = data['main']['temp']
+            pressure = data['main']['pressure']
+            hum = data['main']['humidity']
+            descr = data['weather'][0]['description']
+            wind = data['wind']['speed']
+            wind_dir = data['wind']['deg']
+            precipitation = data['rain']['1h']
+
+            print(f"City Name: {city_name}")
+            print(f"Temperature: {temp}kelvin")
+            print(f"Pressure: {pressure}hPa")
+            print(f"Wind Speed: {wind}m/s")
+            print(f"Wind Direction: {wind_dir}degrees")
+            print(f"Humidity: {hum}%")
+            print(f"Rain: {precipitation}")
+        else:
+            print("Something went wrong... Please try again...")
+
+        thewriter.writerow([handshake_time,'',current_date_and_time,'',temp,'',pressure,'',hum,'',wind,'',wind_dir,'',precipitation])
+        print("SSL Handshake time:", handshake_time, "seconds")
+        print("SSL Handshake date and time:", current_date_and_time)
+
+
+
