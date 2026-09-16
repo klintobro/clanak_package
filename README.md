@@ -1,9 +1,31 @@
 # CLANAK Research Code
 
 Research software accompanying the CLANAK dataset and the associated research on Man-in-the-Middle (MitM) detection under TLS, meteorological, and diurnal conditions.
+## DOI
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22738123.svg)](https://doi.org/10.5281/zenodo.22738123)
+
+**Software DOI:** https://doi.org/10.5281/zenodo.22738123
 
 ## Software components
 
+## How to Cite
+Obrorindo, I. C. (2026). *CLANAK Research Code: Dataset Generation, CLANAK Algorithm, and Extended Analysis* (Version v1.0.1) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.22738123
+
+## Associated Dataset
+The dataset used with this research code is separately archived on Zenodo:
+**Dataset DOI:** https://doi.org/10.5281/zenodo.22151094
+
+## Repository Contents
+This repository contains the reproducible research implementation of CLANAK, including:
+- CLANAK algorithm implementation
+- Dataset-generation code
+- Extended analysis code
+- Google Colab notebooks
+- Supporting documentation
+- Original/source materials where applicable
+
+The dataset and software are maintained as separate research outputs to support reproducibility and independent citation.
 1. **Dataset generation** — Python script originally developed and executed in PyCharm. It measures TLS connection/handshake timing and records meteorological variables obtained from OpenWeatherMap.
 2. **CLANAK algorithm** — Google Colab implementation of the leakage-controlled ELM-LSTM ensemble pipeline.
 3. **Extended analysis** — Google Colab master analysis covering descriptive/statistical analysis, conventional machine-learning benchmarks, ELM, LSTM, and the ELM-LSTM unanimous ensemble.
