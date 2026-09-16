@@ -5,7 +5,7 @@ type: software
 version: 1.0.0
 authors:
   - family-names: Obrorindo
-    given-names: "Immunhierokene Clinton"
+    given-names: "Clinton Immunhierokene"
     affiliation: "Petroleum Training Institute, Effurun, Delta State, Nigeria"
 abstract: >-
   Research software for generation of the CLANAK environmental and TLS
