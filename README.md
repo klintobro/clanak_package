@@ -10,7 +10,7 @@ Research software accompanying the CLANAK dataset and the associated research on
 ## Software components
 
 ## How to Cite
-Obrorindo, I. C. (2026). *CLANAK Research Code: Dataset Generation, CLANAK Algorithm, and Extended Analysis* (Version v1.0.1) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.22738123
+Obrorindo, C. I. (2026). *CLANAK Research Code: Dataset Generation, CLANAK Algorithm, and Extended Analysis* (Version v1.0.1) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.22738123
 
 ## Associated Dataset
 The dataset used with this research code is separately archived on Zenodo:
@@ -158,7 +158,7 @@ For the Colab components, users should run the supplied notebooks sequentially. 
 
 ## Author
 
-**Dr. Immunhierokene Clinton Obrorindo**  
+**Dr. Clinton Immunhierokene Obrorindo**  
 Petroleum Training Institute, Effurun, Delta State, Nigeria
 
 Research interests include cybersecurity, machine learning, network security, anomaly detection, and intelligent cyber-physical systems.
