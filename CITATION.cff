@@ -1,17 +1,21 @@
 cff-version: 1.2.0
 message: "If you use the CLANAK research software, please cite this software release."
+
 title: "CLANAK Research Code: Dataset Generation, CLANAK Algorithm, and Extended Analysis"
 type: software
-version: 1.0.0
+version: 1.0.1
+
 authors:
   - family-names: Obrorindo
     given-names: "Clinton Immunhierokene"
     affiliation: "Petroleum Training Institute, Effurun, Delta State, Nigeria"
+
 abstract: >-
   Research software for generation of the CLANAK environmental and TLS
-  handshake timing dataset, leakage-controlled ELM-LSTM Man-in-the-Middle
-  detection, and extended statistical and machine-learning analysis under
-  meteorological and diurnal conditions.
+  handshake timing dataset, implementation of the CLANAK algorithm, and
+  extended statistical and machine-learning analysis under meteorological
+  and diurnal conditions.
+
 keywords:
   - cybersecurity
   - man-in-the-middle detection
@@ -24,4 +28,9 @@ keywords:
   - LSTM
   - machine learning
   - anomaly detection
+
 license: MIT
+
+repository-code: "https://github.com/klintobro/clanak_package"
+doi: "10.5281/zenodo.22738123"
+date-released: 2026-09-13
